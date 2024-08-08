@@ -1,0 +1,141 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+* {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.nav-link {
+  font-family: 900;
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 3px;
+  color: #f8f8f8 !important;
+  transition: 0.5s linear ease;
+  border-bottom: 2px solid transparent;
+  text-transform: uppercase;
+}
+
+.download-cv a {
+  text-decoration: none;
+  color: white;
+}
+
+.download-cv {
+  background-color: rgb(5, 119, 40);
+  padding: 10px 15px;
+  border-radius: 10px;
+}
+
+.navbar {
+  background-color: #1a1919;
+}
+
+span .navbar-toggler-icon {
+  color: white !important;
+}
+
+.nav-link:hover {
+  color: green !important;
+}
+
+/* Hero */
+
+.hero-section-wrapper {
+  background-color: #1a1919;
+}
+
+.welcome-section p,
+h1 {
+  color: white;
+  letter-spacing: 3px;
+}
+
+.welcome-section h1 span {
+  color: rgb(248, 223, 1);
+}
+.welcome-section h1 {
+  color: white;
+}
+
+.welcome-section span {
+  color: white;
+  letter-spacing: 2px;
+  text-align: justify;
+}
+
+.get-in-btn {
+  background-color: rgb(5, 119, 40);
+  padding: 10px 15px;
+  border-radius: 10px;
+  display: inline-block;
+}
+
+.get-in-btn a {
+  color: white;
+  text-decoration: none;
+}
+
+.tool {
+  border: 1px solid rgb(58, 57, 57);
+  border-radius: 25px;
+}
+
+.service-card-header h4 {
+  font-weight: 700;
+}
+
+.service-card-description {
+  color: white;
+}
+
+#photoshop {
+  background-color: rgb(0, 9, 33);
+}
+
+#photoshop h4 {
+  color: rgb(28, 156, 255);
+}
+
+#illustrator {
+  background-color: rgb(31, 0, 0);
+}
+
+#illustrator h4 {
+  color: rgb(255, 133, 0);
+}
+
+#aftereffects {
+  background-color: rgb(0, 0, 73);
+}
+
+#aftereffects h4 {
+  color: rgb(140, 140, 255);
+}
+
+#lightroom {
+  background-color: rgb(0, 9, 33);
+}
+
+#lightroom h4 {
+  color: rgb(140, 140, 255);
+}
+
+.services-header h1 {
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.experience-box {
+  border-radius: 15px;
+  display: block;
+}
+
+.experience-box h1 {
+  font-weight: 700;
+  justify-content: center;
+}
+
+.experience-box p {
+  font-size: smaller;
+}
