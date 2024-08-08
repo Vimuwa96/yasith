@@ -18,7 +18,7 @@
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg p-4">
       <div class="container">
-        <a class="navbar-brand" href="#"
+        <a class="navbar-brand" href="index.html"
           ><img src="logo-light.png" alt="logo"
         /></a>
         <button
@@ -35,19 +35,21 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
             <li class="nav-item px-3">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
+              <a class="nav-link active" aria-current="page" href="index.html"
+                >Home</a
+              >
             </li>
             <li class="nav-item px-3">
-              <a class="nav-link" href="#">Services</a>
+              <a class="nav-link" href="#services">Services</a>
             </li>
             <li class="nav-item px-3">
-              <a class="nav-link" href="">Experience</a>
+              <a class="nav-link" href="#experience">Experience</a>
             </li>
             <li class="nav-item px-3">
-              <a class="nav-link" href="">Portfolio</a>
+              <a class="nav-link" href="#portfolio">Portfolio</a>
             </li>
             <li class="nav-item px-3">
-              <a class="nav-link" href="">Contact</a>
+              <a class="nav-link" href="#contact">Contact</a>
             </li>
           </ul>
           <div class="download-cv">
@@ -61,6 +63,53 @@
     </nav>
     <!-- Navbar End -->
 
+    <!-- Side Down Nav -->
+    <nav class="navbar navbar-expand-lg p-4" id="sidedownnav">
+      <div class="container">
+        <a class="navbar-brand" href="index.html"
+          ><img src="logo.png" alt="logo"
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContents"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContents">
+          <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+            <li class="nav-item px-3">
+              <a class="nav-link active" aria-current="page" href="index.html"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item px-3">
+              <a class="nav-link" href="#services">Services</a>
+            </li>
+            <li class="nav-item px-3">
+              <a class="nav-link" href="#experience">Experience</a>
+            </li>
+            <li class="nav-item px-3">
+              <a class="nav-link" href="#portfolio">Portfolio</a>
+            </li>
+            <li class="nav-item px-3">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+          <div class="download-cv">
+            <a href=""
+              >Download CV
+              <i class="bi bi-download" style="padding-left: 5px"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- Side Down Nav End -->
     <!-- Hero -->
     <div class="hero-section-wrapper pt-5">
       <div class="container">
@@ -122,9 +171,8 @@
       </div>
     </div>
     <!-- Hero End -->
-
     <!-- Services -->
-    <div class="services-wrapper">
+    <div class="services-wrapper" id="services">
       <div class="container">
         <div class="row">
           <div class="col-md-6 g-4 mb-3 px-3">
@@ -241,12 +289,17 @@
       </div>
     </div>
     <!-- Services End -->
-
     <!-- Experience -->
-
+    <div class="experience-wrapper vh-100"></div>
     <!-- Experience End -->
 
+    <!-- Scroll to Top -->
+    <button onclick="topFunction()" id="myBtn" title="Go to top">
+      <i class="bi bi-caret-up-fill"></i>
+    </button>
+
     <script src="js/style.js"></script>
+    <!-- Type Writter -->
     <script>
       document.addEventListener("DOMContentLoaded", () => {
         const span = document.querySelector(".typewriter span");
@@ -281,6 +334,40 @@
 
         typeWriter();
       });
+    </script>
+    <!-- Side Nav -->
+    <script>
+      window.onscroll = function () {
+        scrollFunction();
+      };
+
+      function scrollFunction() {
+        // Handle sidedownnav visibility
+        if (
+          document.body.scrollTop > 20 ||
+          document.documentElement.scrollTop > 20
+        ) {
+          document.getElementById("sidedownnav").style.top = "0";
+        } else {
+          document.getElementById("sidedownnav").style.top = "-150px";
+        }
+
+        // Handle scroll to top button visibility
+        let mybutton = document.getElementById("myBtn");
+        if (
+          document.body.scrollTop > 20 ||
+          document.documentElement.scrollTop > 20
+        ) {
+          mybutton.style.display = "block";
+        } else {
+          mybutton.style.display = "none";
+        }
+      }
+
+      function topFunction() {
+        document.body.scrollTop = 0; // For Safari
+        document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+      }
     </script>
   </body>
 </html>
