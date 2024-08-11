@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery with Fancybox</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css">
+    <style>
+        .project-section-wrapper {
+            padding-top: 3rem;
+        }
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            margin: -5px; /* Negative margin to offset the gap created by padding */
+        }
+        .gallery-item {
+            flex: 1 1 33.333%; /* Each item takes up 1/3rd of the row */
+            box-sizing: border-box;
+            padding: 5px; /* Padding to create space between images */
+        }
+        .gallery-item img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        /* Optional: Add hover effect */
+        .gallery-item img:hover {
+            opacity: 0.8;
+            transition: opacity 0.3s ease;
+        }
+    </style>
+</head>
+<body>
+
+<div class="project-section-wrapper">
+    <div class="gallery">
+        <a href="projects/2.jpeg" data-fancybox="gallery" class="gallery-item">
+            <img src="projects/2.jpeg" alt="image">
+        </a>
+        <a href="projects/2.jpeg" data-fancybox="gallery" class="gallery-item">
+            <img src="projects/2.jpeg" alt="image">
+        </a>
+        <a href="projects/3.jpeg" data-fancybox="gallery" class="gallery-item">
+            <img src="projects/3.jpeg" alt="image">
+        </a>
+        <a href="projects/2.jpeg" data-fancybox="gallery" class="gallery-item">
+            <img src="projects/2.jpeg" alt="image">
+        </a>
+        <!-- Add more items as needed -->
+    </div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+
+</body>
+</html>

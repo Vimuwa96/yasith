@@ -181,7 +181,6 @@ h1 {
 }
 
 /* Timeline */
-
 /* The actual timeline (the vertical ruler) */
 .timeline {
   position: relative;
@@ -203,8 +202,7 @@ h1 {
 /* Container around content */
 .content-container {
   position: relative;
-  background-color: inherit;
-  width: 100%;
+  object-fit: contain;
 
 }
 
@@ -224,8 +222,9 @@ h1 {
 
 .content p{
   color: rgb(191, 187, 187);
-  max-width: 75%;
   text-align: justify;
+  overflow: hidden;
+  width: 85%;
 }
 /* Place the content-container to the right */
 .right {
@@ -270,4 +269,43 @@ h1 {
   .right {
     left: 0%;
   }
+
+  .content p{
+    color: rgb(191, 187, 187);
+    text-align: justify;
+    overflow: hidden;
+    width: 100%;
+  }
+}
+
+.project-header h3{
+  font-weight: 700;
+}
+
+.project-card-wrapper{
+  border-radius: 15px;
+}
+
+
+.project-section-wrapper {
+  padding-top: 3rem;
+}
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.gallery-item {
+  flex: 1 1 calc(33.333% - 20px);
+  box-sizing: border-box;
+  position: relative;
+}
+.gallery-item img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.contact-warpper{
+  background-color: #1a1919;
 }

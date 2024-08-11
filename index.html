@@ -15,6 +15,13 @@
     />
     <!-- Animations -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <!-- Ligh Gallery -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css"
+    />
   </head>
   <body>
     <!-- Navbar -->
@@ -143,33 +150,17 @@
                   class="image-wrapper pt-5 d-flex"
                   style="justify-content: space-around"
                 >
-                  <div
-                    class="tool g-2 d-flex my-auto"
-                    data-aos="fade-up"
-                    data-aos-duration="1000"
-                  >
+                  <div class="tool g-2 d-flex my-auto">
                     <img src="ps.png" alt="ps" width="100%" />
                   </div>
-                  <div
-                    class="tool g-2 d-flex my-auto"
-                    data-aos="fade-up"
-                    data-aos-duration="1800"
-                  >
+                  <div class="tool g-2 d-flex my-auto">
                     <img src="ai.png" alt="ps" width="100%" />
                   </div>
-                  <div
-                    class="tool g-2 d-flex my-auto"
-                    data-aos="fade-up"
-                    data-aos-duration="1200"
-                  >
+                  <div class="tool g-2 d-flex my-auto">
                     <img src="ae.png" alt="ps" width="100%" />
                   </div>
-                  <div
-                    class="tool g-2 d-flex my-auto"
-                    data-aos="fade-up"
-                    data-aos-duration="2000"
-                  >
-                    <img src="lr.png" alt="ps" width="100%" />
+                  <div class="tool g-2 d-flex my-auto">
+                    <img src="pr.png" alt="ps" width="100%" />
                   </div>
                 </div>
               </div>
@@ -243,7 +234,7 @@
               <div class="service-card d-flex pt-3 pb-3" id="lightroom">
                 <div class="service-card-body p-4">
                   <div class="service-card-header">
-                    <h4>ADOBE LIGHTROOM</h4>
+                    <h4>ADOBE PREMIRE-PRO</h4>
                   </div>
                   <div class="service-card-description">
                     <p>
@@ -308,7 +299,7 @@
     </div>
     <!-- Services End -->
     <!-- Experience -->
-    <div class="experience-wrapper" >
+    <div class="experience-wrapper pb-5">
       <div class="container pt-5">
         <div class="row pt-3">
           <div class="experience-header">
@@ -320,33 +311,104 @@
                 <div class="content-container right">
                   <div class="content">
                     <h3>2017</h3>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptate inventore, cum tenetur, quaerat voluptatem repellat similique numquam adipisci quam natus voluptatibus saepe facilis recusandae dolorem.</p>
+                    <p>
+                      Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                      Voluptate inventore, cum tenetur, quaerat voluptatem
+                      repellat similique numquam adipisci quam natus
+                      voluptatibus saepe facilis recusandae dolorem.
+                    </p>
                   </div>
                 </div>
                 <div class="content-container right">
                   <div class="content">
                     <h3>2018</h3>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptate inventore, cum tenetur, quaerat voluptatem repellat similique numquam adipisci quam natus voluptatibus saepe facilis recusandae dolorem.</p>
+                    <p>
+                      Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                      Voluptate inventore, cum tenetur, quaerat voluptatem
+                      repellat similique numquam adipisci quam natus
+                      voluptatibus saepe facilis recusandae dolorem.
+                    </p>
                   </div>
                 </div>
                 <div class="content-container right">
                   <div class="content">
                     <h3>2019</h3>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptate inventore, cum tenetur, quaerat voluptatem repellat similique numquam adipisci quam natus voluptatibus saepe facilis recusandae dolorem.</p>
+                    <p>
+                      Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                      Voluptate inventore, cum tenetur, quaerat voluptatem
+                      repellat similique numquam adipisci quam natus
+                      voluptatibus saepe facilis recusandae dolorem.
+                    </p>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-          <div class="col-md-5  pt-5 d-flex my-auto">
+          <div class="col-md-5 pt-5 d-flex my-auto">
             <div class="project-video-wrapper d-flex my-auto">
-              <img class="d-flex my-auto" src="project-2.jpg" alt="project" width="100%" height="100%">
+              <img
+                class="d-flex my-auto"
+                src="project-2.jpg"
+                alt="project"
+                width="100%"
+                height="100%"
+              />
             </div>
           </div>
         </div>
       </div>
     </div>
     <!-- Experience End -->
+    <div id="portfolio">
+      <!-- Projects -->
+      <div class="projects-wrapper pb-5 pt-5">
+        <div class="container">
+          <div class="project-header">
+            <h3>RECENT PROJECTS</h3>
+          </div>
+          <div class="project-description">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis ab
+              accusantium minus nulla tenetur odio.
+            </p>
+          </div>
+          <!-- prject -->.
+          <div class="project-section-wrapper">
+            <div class="gallery">
+              <a
+                href="projects/2.jpeg"
+                data-fancybox="gallery"
+                class="gallery-item"
+              >
+                <img src="projects/2.jpeg" alt="image" width="100%" />
+              </a>
+              <a
+                href="projects/3.jpeg"
+                data-fancybox="gallery"
+                class="gallery-item"
+              >
+                <img src="projects/3.jpeg" alt="image" />
+              </a>
+              <a
+                href="projects/2.jpeg"
+                data-fancybox="gallery"
+                class="gallery-item"
+              >
+                <img src="projects/2.jpeg" alt="image" />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Projects End -->
+
+    <!-- Contact Section -->
+    <div class="contact-warpper vh-100">
+
+    </div>
+
+    <!-- Contact Section End -->
 
     <!-- Scroll to Top -->
     <button onclick="topFunction()" id="myBtn" title="Go to top">
@@ -358,7 +420,7 @@
     <script>
       document.addEventListener("DOMContentLoaded", () => {
         const span = document.querySelector(".typewriter span");
-        const words = ["DESIGNER", "DEVELOPER", "CREATOR"];
+        const words = ["DESIGNER", "EDITOR", "CREATOR"];
         let wordIndex = 0;
         let charIndex = 0;
         let isDeleting = false;
@@ -430,5 +492,9 @@
     <script>
       AOS.init();
     </script>
+
+    <!-- LightGallery JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
   </body>
 </html>
