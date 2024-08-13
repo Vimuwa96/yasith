@@ -323,3 +323,43 @@ h1 {
   color: white;
   padding: 15px 28px;
 }
+
+.contact-heading h1 {
+  color: white;
+  font-weight: 800;
+}
+
+.line {
+  border-bottom: 1px solid white;
+}
+
+.email-section-wrapper {
+  color: white;
+}
+
+.email-icon i {
+  background-color: #10860b;
+  padding: 20px 22px;
+  border-radius: 50%;
+}
+
+.socials-wrapper {
+  color: white;
+}
+
+.social a i {
+  color: white;
+}
+
+.social {
+  border: 1px solid rgb(110, 109, 109);
+  display: inline-block;
+  padding: 8px 20px;
+  border-radius: 15px;
+}
+
+.developer a {
+  text-decoration: none;
+  font-size: small;
+  color: white;
+}

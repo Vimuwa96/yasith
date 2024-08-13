@@ -1,7 +1,7 @@
 @font-face {
   font-family: lg;
   src: url(/src/fonts/lg.ttf) format("truetype"),
-    url(src/fonts/lg.woff) format("woff"), url(src/fonts/lg.svg) format("svg");
+    url(/src/fonts/lg.woff) format("woff"), url(/src/fonts/lg.svg) format("svg");
   font-weight: 400;
   font-style: normal;
   font-display: block;
