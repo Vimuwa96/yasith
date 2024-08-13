@@ -15,13 +15,9 @@
     />
     <!-- Animations -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 
     <!-- Ligh Gallery -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css"
-    />
+    <link rel="stylesheet" href="css/lightgallery.min.css" />
   </head>
   <body>
     <!-- Navbar -->
@@ -372,41 +368,55 @@
               accusantium minus nulla tenetur odio.
             </p>
           </div>
-          <!-- prject -->.
-          <div class="project-section-wrapper">
-            <div class="gallery">
-              <a
-                href="projects/2.jpeg"
-                data-fancybox="gallery"
-                class="gallery-item"
-              >
-                <img src="projects/2.jpeg" alt="image" width="100%" />
-              </a>
-              <a
-                href="projects/3.jpeg"
-                data-fancybox="gallery"
-                class="gallery-item"
-              >
-                <img src="projects/3.jpeg" alt="image" />
-              </a>
-              <a
-                href="projects/2.jpeg"
-                data-fancybox="gallery"
-                class="gallery-item"
-              >
-                <img src="projects/2.jpeg" alt="image" />
-              </a>
-            </div>
-          </div>
+          <!-- prject -->
+          <div id="aniimated-thumbnials" class="aniimated-thumbnials">
+            <a href="projects/2.jpeg">
+              <img src="projects/2.jpeg" />
+            </a>
+            <a href="projects/3.jpeg">
+              <img src="projects/3.jpeg" />
+            </a>
+            <a href="projects/4.jpg">
+              <img src="projects/4.jpg" />
+            </a>
+            <a href="projects/4-1.jpg">
+              <img src="projects/5.jpg" />
+            </a>
+            <a href="projects/6.jpg">
+              <img src="projects/6.jpg" />
+            </a>
+            <a href="projects/7.jpg">
+              <img src="projects/7.jpg" />
+            </a>
+            <a href="projects/8.jpg">
+              <img src="projects/8.jpg" />
+            </a>
+            <a href="projects/9.jpg">
+              <img src="projects/9.jpg" />
+            </a>
+
+            <a href="projects/10.jpg">
+              <img src="projects/10.jpg" />
+            </a>
+
+            <a href="projects/11.jpg">
+              <img src="projects/11.jpg" />
+            </a>
+
+            <a href="projects/12.jpg">
+              <img src="projects/12.jpg" />
+            </a>    
         </div>
+        <div class="see-more text-center pt-5">
+          <a href="projects.html" class="see-more-btn">See More</a>
+        </div>
+        
       </div>
     </div>
     <!-- Projects End -->
 
     <!-- Contact Section -->
-    <div class="contact-warpper vh-100">
-
-    </div>
+    <div class="contact-warpper vh-100" id="contact"></div>
 
     <!-- Contact Section End -->
 
@@ -414,6 +424,15 @@
     <button onclick="topFunction()" id="myBtn" title="Go to top">
       <i class="bi bi-caret-up-fill"></i>
     </button>
+
+    <!-- LightGallery JS -->
+    <script src="js/lightgallery.min.js"></script>
+    <!-- LightGallery Thumbnail Plugin JS -->
+    <script>
+      lightGallery(document.getElementById("aniimated-thumbnials"), {
+        thumbnail: true,
+      });
+    </script>
 
     <script src="js/style.js"></script>
     <!-- Type Writter -->
@@ -492,9 +511,5 @@
     <script>
       AOS.init();
     </script>
-
-    <!-- LightGallery JS -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
   </body>
 </html>

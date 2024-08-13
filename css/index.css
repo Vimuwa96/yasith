@@ -184,7 +184,6 @@ h1 {
 /* The actual timeline (the vertical ruler) */
 .timeline {
   position: relative;
-
 }
 
 /* The actual timeline (the vertical ruler) */
@@ -203,7 +202,6 @@ h1 {
 .content-container {
   position: relative;
   object-fit: contain;
-
 }
 
 /* The circles on the timeline */
@@ -220,7 +218,7 @@ h1 {
   z-index: 1;
 }
 
-.content p{
+.content p {
   color: rgb(191, 187, 187);
   text-align: justify;
   overflow: hidden;
@@ -270,42 +268,58 @@ h1 {
     left: 0%;
   }
 
-  .content p{
+  .content p {
     color: rgb(191, 187, 187);
     text-align: justify;
     overflow: hidden;
     width: 100%;
   }
+
+  .aniimated-thumbnials a {
+    flex: 1 1 calc(50% - 20px) !important;
+    /* Responsive: each image takes up 50% of the width, minus the gap */
+    max-width: calc(50% - 20px);
+    /* Ensure maximum width respects the gap */
+    box-sizing: border-box;
+    /* Ensure padding and borders don't affect the size */
+  }
 }
 
-.project-header h3{
-  font-weight: 700;
-}
-
-.project-card-wrapper{
-  border-radius: 15px;
-}
-
-
-.project-section-wrapper {
-  padding-top: 3rem;
-}
-.gallery {
+.aniimated-thumbnials {
   display: flex;
+  gap: 20px;
+  /* Small gap between images */
   flex-wrap: wrap;
-  gap: 10px;
 }
-.gallery-item {
-  flex: 1 1 calc(33.333% - 20px);
+
+.aniimated-thumbnials a {
+  flex: 2 2 calc(25% - 20px);
+  /* Responsive: each image takes up 50% of the width, minus the gap */
+  max-width: calc(50% - 20px);
+  /* Ensure maximum width respects the gap */
   box-sizing: border-box;
-  position: relative;
+  /* Ensure padding and borders don't affect the size */
 }
-.gallery-item img {
+
+.aniimated-thumbnials img {
   width: 100%;
-  height: auto;
+  height: 100%;
+  object-fit: cover;
+  /* Ensure images cover the entire container */
   display: block;
 }
 
-.contact-warpper{
+.projects-wrapper {
+  background-color: #edffed;
+}
+
+.contact-warpper {
   background-color: #1a1919;
+}
+
+.see-more a {
+  text-decoration: none;
+  background-color: #075005;
+  color: white;
+  padding: 15px 28px;
 }
