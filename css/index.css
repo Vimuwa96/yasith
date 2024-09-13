@@ -363,3 +363,7 @@ h1 {
   font-size: small;
   color: white;
 }
+
+.service-card a {
+  text-decoration: none;
+}
